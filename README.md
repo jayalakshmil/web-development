@@ -1,6 +1,6 @@
 # web-development
 
-*  Module 1 - Deploying the first Website to Amazon S3 
+*  **Module 1** - Deploying the first Website to Amazon S3 
 *  Module 2 - Creating web pages with HTML5 
 *  Module 3 - Styling web pages using CSS 
 *  Module 4 - CSS3 effects and animations 
