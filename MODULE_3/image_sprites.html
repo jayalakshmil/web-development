@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>image sprites</title>
+<style>
+#navlist {
+  position: relative;
+}
+
+#navlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+
+#navlist li, #navlist a {
+  height: 44px;
+  display: block;
+}
+
+#home {
+  left: 0px;
+  width: 46px;
+  background: url('image.jpg') 0 0;
+}
+
+#prev {
+  left: 63px;
+  width: 43px;
+  background: url('image.jpg') -47px 0;
+}
+
+#next {
+  left: 129px;
+  width: 43px;
+  background: url('image.jpg') -91px 0;
+}
+
+#home a:hover {
+  background: url('image.jpg') 0 -45px;
+}
+
+#prev a:hover {
+  background: url('image.jpg') -47px -45px;
+}
+
+#next a:hover {
+  background: url('image.jpg') -91px -45px;
+}
+
+</style>
+
+
+
+</head>
+<body>
+    <div>
+        <ul id="navlist">
+            <li id="prev"><a href="http://www.google.com"></a></li>
+            <li id="home"><a href="http://www.edureka.co"></a></li>  
+            <li id="next"><a href="http://www.yahoo.com"></a></li>       
+         </ul>
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resolving conflicts in style</title>
+    
+</head>
+<body>
+    <!-- <p style="color:crimson;">Some Paragraph</p> -->
+    <!-- inline style tag is very specific - it targets exactly one element ///
+    Due to  the nature of inline style.they always  win in case of property conflicts-->
+    
+    <p>Some Paragraph</p>
+    
+    <style>
+
+        /* the element selector, in this case 'p'is not specific - it targets any paragraph*/
+        p  {
+            color: blueviolet;
+            font-size: 5em;
+        }
+        p {
+            color: chartreuse;
+        
+        }
+        /* last css rules wins to resolve conflicts(when the selector is the same) */
+        </style>
+
+</body>
+</html>
