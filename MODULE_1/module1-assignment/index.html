@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>module1_assignment</title>
+    <style>
+    .links > a{
+        display: block;
+        color: brown;
+    }
+    .links{
+        width: 25%;
+        float: left;
+    }
+    .companies{
+        width: 75%;
+        float: left;
+    }
+    .italic{
+        font-style: italic;
+        font-size: 20px;
+    }
+    table,th,td{
+        border: 2px solid rgb(231, 135, 10);
+        border-collapse: collapse;
+        padding: 10px;
+    }
+    tr:nth-child(even){
+        background-color: rgb(51, 201, 228);
+
+    }
+    iframe{
+        height: 500px;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+<div class="links">
+    <a href="http://www.yahoo.com" target="yahoo">yahoo</a>
+    <a href="http://www.google.com" target="google" >google</a>
+    <a href="http://www.cnn.com" target="CNN" >CNN</a>
+</div>
+<div class="companies ">
+    <h1>company’s information</h1>
+    <hr/>
+    <h3>YAHOO</h3>
+
+    <p>
+        <span class="italic">Yahoo!</span> is an American web services provider headquartered in Sunnyvale, California, and owned by Verizon Media. The original Yahoo! company was founded by Jerry Yang and David Filo in January 1994 and was incorporated on March 2, 1995. Yahoo was one of the pioneers of the early Internet era in the 1990s. 
+    </p>
+    <hr/>
+    <h3>GOOGLE</h3>
+    <P>
+            <span class="italic">Google</span> LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, search engine, cloud computing, software, and hardware. It is considered one of the Big Four technology companies, alongside Amazon, Apple and Facebook.
+        </P>
+    <hr/>
+    <h3>CNN</h3>
+    <P>
+           <span class="italic">CNN</span> Cable News Network is an American news-based pay television channel owned by WarnerMedia News & Sports, a division of AT&T's WarnerMedia. CNN was founded in 1980 by American media proprietor Ted Turner as a 24-hour cable news channel. 
+
+    </P>
+</div>
+<div>
+    <table>
+    <thead>
+        <caption>Employee informations</caption>
+       
+        
+        <th>Employe Id</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Designation</th>
+    
+    </thead>
+    <tbody>
+        <tr>
+                <td>123</td>
+                <td>siva</td>
+                <td>HR</td>
+                <td>Manager</td>
+        </tr>
+        <tr>
+                <td>345</td>
+                <td>Kumar</td>
+                <td>Finance</td>
+                <td>Developer</td>
+
+        </tr>
+        <tr>
+                <td>576</td>
+                <td>kishore</td>
+                <td>IT</td>
+                <td>SR.IT Developer</td>
+        </tr>
+        <tr>
+                <td>879</td>
+                <td>Venky</td>
+                <td>IT</td>
+                <td>J.IT Developer</td>
+        </tr>
+        
+    </tbody>
+    </table>
+</div>
+<div>
+    <h1><i>COUNTRIES</i></h1>
+    <ul>
+        <li>India</li>
+        <li>New York</li>
+        <li>Sanfrancisco</li>
+        <li>Florida</li>
+        
+    </ul>
+
+</div>
+<div>
+    <a href="http://www.edureka.co"target="my-iframe"><h4><i>edureka website</i></h4></a>
+
+    <iframe src="http://www.edureka.co"name="my-iframe" ></iframe>
+</div>
+
+</body>
+</html>
