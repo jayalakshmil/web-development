@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms in html</title>
+</head>
+<body>
+    <form action="process-form.html" method="post">
+            <label for="name">name</label>
+            <input type="text" id="name" name="name"/>
+
+            <label for="age">age</label>
+            <input type="number" id="age" name="age" value="30"/>
+
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" />
+
+            <label for="comment">comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+
+            <label for="cities">cities</label>
+            <select name="cities" id="cities" multiple="multiple">
+                <option value="ny">NewYork</option>
+                <option value="sn">Sanfrancisco</option>
+                <option selected="slected" value="fl">Florida</option>
+                <option value="jx">Jacksonville</option>
+            </select>
+            
+            
+            <label for=""><input type="checkbox"name="courses1"value="web" >web design</label>
+            <label for=""><input type="checkbox"name="courses1"value="foot">foot ball</label>
+            <label for=""><input type="checkbox"name="courses1"value="bass">bass ball</label>
+
+            <label ><input type="radio" name="courses2" value="web design">web design</label>
+            <label ><input type="radio"name="courses2" value="foot ball">foot ball</label>
+            <label ><input type="radio"name="courses2" value="bass ball">bass ball</label>
+            <input type="submit" value="sign me up"/>
+            <input type="reset" value="reset the form"/>
+       
+    </form>
+</body>
+</html>
