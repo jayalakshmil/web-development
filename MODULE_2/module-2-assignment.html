@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Module_2_Assignment</title>
+</head>
+<body>
+
+       
+
+        <h1>USER INFORMATION</h1>
+        <form >
+           First Name   : <input type="text" placeholder="Enter your name"/><br>
+           Last Name    : <input type="text" placeholder="Enter your last name"/><br>
+           Address      : <input type="text" placeholder="Enter your address"><br>
+           Email ID     : <input type="emil" placeholder="Enter your email address"><br>
+           Date of birth: <input type="date"> 
+        </form>
+        <br>
+        <hr>
+        <br>
+    <div>
+    <audio controls autoplay>
+        
+        <source src="../MODULE_2/audio_video/audio.mp3" type="audio/mp3"/>
+   
+    </audio>
+    <br>
+    <br>
+
+    <hr>
+<br>
+
+
+    <video controls loop autoplay >
+
+        <source src="../MODULE_2/audio_video/video.mp4" type="video/mp4"/>
+    </video>
+</div>
+<br>
+<hr>
+
+<h1>Canvas in HTML</h1>
+    
+    <canvas id="can1" width="200" height="100" style="border:1px solid orangered;" ></canvas>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+<h2>SVG Circle</h2>
+<svg id="circle" height="200" >
+    <circle id="circle" cx="50" cy="50" r="50" fill="green" />
+</svg>
+
+
+<script>
+
+        //sessionStorage and localStorage
+        console.log(sessionStorage);
+        
+        localStorage.setItem('first name','jaya');
+        localStorage.setItem('last name', 'Lankada');
+        localStorage.setItem('Date of birth','may');
+        console.log(localStorage);
+         
+         var name = localStorage.getItem('last name');
+        console.log(name);
+  
+        //Canvas
+        var canvas2=document.getElementById("can1");
+        console.log(canvas2);
+        var context1=canvas2.getContext("2d");
+        console.log(context1);
+        context1.beginPath();
+        context1.arc(95,50,40,0,2*Math.PI);
+        context1.fillStyle="#00dd00";
+        context1.fill();
+</script>
+    
+</body>
+</html>

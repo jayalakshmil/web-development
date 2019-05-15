@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas in HTML</title>
+
+</head>
+<body>
+    <h1>Canvas in HTML</h1>
+    
+    <canvas id="can1" width="200" height="100" style="border:1px solid orangered;" ></canvas>
+
+<script>
+
+
+var canvas2=document.getElementById("can1");
+console.log(canvas2);
+var context1=canvas2.getContext("2d");
+console.log(context1);
+context1.beginPath();
+context1.arc(95,50,40,0,2*Math.PI);
+context1.fillStyle="#00dd00";
+context1.fill();
+
+</script>
+<h1>SVG Circle</h1>
+<svg id="ex1" height="100">
+    <circle id="bluecircle" cx="40" cy="40" r="40" fill="black" />
+</svg>
+
+
+
+
+
+</body>
+</html>
