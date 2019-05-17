@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attribute Selectors and css borders </title>
+    <style>
+        body{
+            background: url(/home/sival/JAYA/web-development/images/bag.jpg);
+            background-size: 10% 10%;
+            
+        }
+    li{
+        float: left;
+        list-style: none;
+    }
+    a{
+        width: 200px;
+        display: block;
+        background-color: bisque;
+    }
+    a[href="#"]{
+        background-color: chartreuse;
+    }
+    h1,h2,h3{
+        color: red;
+    }
+    input[type=text]{
+        width: 200px;
+        margin-bottom: 20px;
+        display: block;
+        background-color: aqua;
+    }
+    input[type=password]{
+        width: 200px;
+        margin-bottom: 20px;
+        display: block;
+        background-color: aqua;
+    }
+    input[type=submit]{
+        width: 100px;
+        color:rgba(180, 163, 11, 0.637);
+    }
+    div{
+        border: 10px double darkkhaki;
+        margin: 50 50 50 50;
+        margin-top: 50px;
+        border-radius: 200px;
+        padding: 80px 50px;
+        background-color:darkcyan;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+        padding: 5px 5px;
+        box-shadow: 20px 20px 20px gray;
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <br>
+ <ul>
+  <li><a href="#">facebook</a></li>
+  <li><a href="#">google</a> </li>
+  <li><a href="#">yahoo</a> </li>
+  <li><a href="http://www.unf.com">UNF</a> </li>
+  <li><a href="http://www.w3school.com">w3school</a> </li>
+  <li><a href="http://www.gmail.com">Gmail</a> </li>
+</ul>
+<br>
+<div>
+    <h2>welcome to selector</h2>
+    <h3>Login Details</h3>
+    <form >
+        Username  :   <input type="text" name="username" placeholder="enter name"> <br>
+
+        Password  :   <input type="password" name="password" placeholder="enter your password" > <br>
+        <input type="submit" name="submit" >
+   
+    </form>
+</div>
+<p>
+    <h1>Shadow Borders</h1>
+    
+        <img src="../images/flower.jpg" alt="flower">
+    
+    </p>
+
+</body>
+</html>
