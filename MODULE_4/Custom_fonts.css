@@ -1,0 +1,10 @@
+@font-face{
+    src: url("../style_text/RobotoCondensed-Bold.ttf");
+   
+    font-family: 'roboto extradark';
+}
+
+@font-face{
+    src: url("../style_text/RobotoCondensed-Light.ttf");
+    font-family: 'Roboto super';
+}
