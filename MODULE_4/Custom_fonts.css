@@ -8,3 +8,12 @@
     src: url("../style_text/RobotoCondensed-Light.ttf");
     font-family: 'Roboto super';
 }
+body{
+    font-family: 'roboto extradark';
+     /* font-weight: 700; */
+     font-style: italic; 
+}
+p{
+    font-family : 'Roboto super';
+    font-style: initial;
+}

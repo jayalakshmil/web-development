@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS</title>
+    <style>
+    .div-1 {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        @-webkit-animation :color-animation 2s infinite linear, move-animation 4s infinite linear;
+        animation: color-animation 2s infinite linear, move-animation 4s infinite linear;
+    }
+    .div-2 {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        @-webkit-animation :color-animation 2s infinite ease-out, move-animation 4s infinite ease-out;
+        animation: color-animation 2s infinite ease-out, move-animation 4s infinite ease-out;
+    }
+
+    @-webkit-keyframes color-animation {
+        0% {  background-color:yellow; }
+        25% { background-color: red; }
+        50% {  background-color:blue;}
+        75% {  background-color:green; }
+        100% { background-color: yellow; }
+
+    }
+    @keyframes color-animation {
+        0% {  background-color:yellow; }
+        25% { background-color: red; }
+        50% {  background-color:blue;}
+        75% {  background-color:green; }
+        100% { background-color: yellow; }
+
+    }
+    @keyframes move-animation{
+        0%{ transform:translate(0,0); }
+        25%{ transform:translate(100px,0); }
+        50%{ transform:translate(100px,100px); }
+        75%{ transform:translate(0,100px); }
+        100%{ transform:translate(0,0); }
+
+
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="div-1"></div>
+    <div class="div-2"></div>
+
+</body>
+</html>
