@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resolving conflicts styles</title>
+    
+    <!-- external and embeded style sheets have equal importance -->
+</head>
+<body>
+    <p id="para_1">Some Paragraph</p>
+<style>
+    /* the ID selector being more 'specific' gets more importance in case of conflicts. */
+        #para_1  {
+            color: blueviolet;
+            font-size: 5em;
+        }
+        p {
+            color: chartreuse;
+        
+        }
+        /* (a,b,c,d)
+           (0,1,0,1)
+        a => 0/1 - 1 for inline styles
+        b is for number of ids in the selector
+        c is for number of classes in the selector
+        d is for number of tags mentioned in the selector
+        */
+           
+
+        p#para_1{
+            color: aqua;
+        } 
+        /* specificity value for a selector 
+          (a,b,c,d)  */
+</style>
+<link rel="stylesheet" href="style_conflicts.css">
+
+
+
+</body>
+</html>

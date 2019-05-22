@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Combinators</title>
+    <style>
+    div span{
+        color :chocolate;
+    }
+    div.secondry-content > p > span{
+        color: darkcyan;
+        
+    }
+
+    span {
+            display: inline-block;
+     }
+
+    div.secondry-content >p >span:first-letter{
+        font-size: 2em;
+    }
+
+   
+    
+    </style>
+
+</head>
+<body>
+    <div>
+        <span>span directly with in div(child of a div)</span>
+        <p>para 1</p>
+        <p>para 2</p>
+<p>
+    para 3
+    <span >span1 para3</span><br>
+    <span>span2 para3</span><br>
+    <span>span3 para3</span><br>
+</p>
+
+<p>para 4</p>
+    </div>
+
+<div class="secondry-content">
+
+    <!-- <span>sapn directly with in div(child of a div)</span> -->
+        <p>para 1</p>
+        <p>para 2</p>
+<p>
+    para 5
+    <span >
+        span1 para3</span><br>
+    <span>span2 para3</span><br>
+    <span>span3 para3</span><br>
+</p>
+
+<p>para 6</p>
+</div>
+
+</body>
+</html>

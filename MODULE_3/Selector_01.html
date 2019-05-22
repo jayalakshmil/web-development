@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectors in HTML</title>
+    <style>
+     p:first-child{
+         color: chartreuse;
+     }
+    p:first-letter{
+        font-size: 2em;
+    }
+    .highlighted-first-line:first-line{
+        color: darkmagenta;
+    }
+    input:focus{
+        background-color: chocolate;
+    }
+
+
+    </style>
+
+</head>
+<!-- css selector 
+    id, tags,class
+    combination of selectors
+    attributes
+    pseudo classes: - :first-child,:first-line,:first-letter,:focus
+-->
+
+<body>
+    <div>
+    <p>First para with in div</p>
+    <p>Second para with in div </p>
+    <p>Third para with in div</p>
+    <p>Fourth para with in div</p>
+</div>
+<div class="highlighted-first-line" >
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officiis quod rem ad minus, delectus eveniet dolorum, nihil perspiciatis neque doloremque ipsa voluptas iste quia perferendis iusto, facilis nesciunt temporibus.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, in fuga at odio corporis minima aspernatur hic. Officiis aspernatur nisi, quas culpa impedit, laudantium omnis velit modi atque eum laborum.
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, ipsa eligendi necessitatibus maiores iste mollitia natus minima quod vel, fuga similique assumenda ad consequuntur veritatis hic, voluptatibus atque molestias doloremque.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque necessitatibus sit ipsa autem voluptatibus dignissimos, doloremque illum rerum est tenetur quis magnam quos nostrum ab blanditiis maxime eum voluptates accusamus.
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis qui, ipsa exercitationem est iusto, autem eos modi architecto unde a nemo obcaecati fuga repudiandae maiores? Consequuntur tempore dolor dicta quo.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, eveniet! Facere molestiae consequuntur ipsam autem maiores? Earum minus, itaque sit soluta cum laudantium accusamus, et adipisci eligendi, quaerat beatae dolore.
+
+</div>
+
+<hr>
+<br>
+Name : <input type="text" name="first name" placeholder="enter your name" >
+<br>
+Age  : <input type="number" name="age">
+</body>
+</html>
