@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datepicker</title>
+    <style>
+        .contenthover{
+            color: crimson;
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div id="timer">
+
+    </div> -->
+    <img src="images/nature.jpg" id="nature">
+
+    <div class="contenthover">
+        <h3>Travel Trip</h3>
+        <p>Nature is a British weekly scientific journal founded and based in London, England. As a multidisciplinary publication Nature features peer-reviewed research from a variety of academic disciplines, mainly in science, technology, and the natural sciences.</p>
+
+    </div> <br>
+    <img src="images/nature.jpg" id="nature_1">
+
+    <div class="contenthover">
+        <h3>Travel Trip</h3>
+        <p>Nature is a British weekly scientific journal founded and based in London, England. As a multidisciplinary publication Nature features peer-reviewed research from a variety of academic disciplines, mainly in science, technology, and the natural sciences.</p>
+
+    </div>
+
+
+
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery.contenthover.min.js"></script>
+
+    <script>
+        // var x = 1;
+        // setInterval(function(){
+        //     $('#timer').html(x);
+        //     x++;
+        // }, 1000);
+
+        $(document).ready(function(){
+            $('#nature').contenthover({
+                overlay_background :'#000',
+                overplay_opacity : 0.65
+            }),
+            $('#nature_1').contenthover({
+                overlay_background :'#000',
+                overplay_opacity : 0.65,
+                effect : 'slide',
+                slide_speed : 300,
+                slide_direction : 'left'
+
+            });
+        });
+    </script>
+   
+</body>
+</html>
