@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Including JS</title>
+    <style>
+    div{
+        padding: 20px;
+        border: 2px solid crimson;
+        background-color: lightpink;
+    }
+    </style>
+</head>
+<body>
+    <!-- INLINE JS -->
+   <div onclick="alert('div has been clicked')">
+       Some Contant
+   </div> 
+
+   <div id="div-2">
+        Some Contant (2)
+    </div>
+
+    <div id="div-3">
+            Some Contant (3)
+        </div>
+
+        <div id="message"></div>
+
+    <script>
+        var div2=document.getElementById('div-2');
+        div2.addEventListener(
+            'mouseover',
+            function(){
+            alert('mouse is over div-2')
+        } );
+    </script>
+    <script src="js/inculde.js"></script>
+</body>
+</html>
