@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1/css/bootstrap.min.css">
+<style>
+    body{
+        margin: 10px;
+    }
+</style>
+</head>
+<body>
+<button class="btn btn-info" >mails <span class="badge" id="mail-badge" >12</span></button>
+    <script>
+        setTimeout (function(){
+            document.getElementById('mail-badge').innerHTML = 45;
+        }, 3000);
+
+    </script>
+
+
+
+</body>
+</html>
