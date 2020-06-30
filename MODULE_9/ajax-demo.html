@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div id="qod"></div>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        // var xhr = new XMLHttpRequest();
+        // xhr.addEventListener('readystatechange',function(){
+        //     console.log(xhr.readyState);
+        //     console.log('event occured');
+        //     if((xhr.status >= 200 && xhr.status < 400) && xhr.readyState === 4 ){
+        //         document.getElementById('qod').innerHTML = xhr.responseText;
+        //     }else if(xhr.status >= 400){
+        //         alert('error');
+        //     }
+            
+        // })
+        // xhr.open('GET','/qod.txt',true);
+        // xhr.send();
+        // console.log('end');
+
+        // function ajax( config){
+        //     var xhr = new XMLHttpRequest();
+        // xhr.addEventListener('readystatechange',function(){
+        //     if((xhr.status >= 200 && xhr.status < 400) && xhr.readyState === 4 ){
+        //         config.success( xhr.responseText );            
+        //         }else if( xhr.status >= 400 ){
+        //         config.error();
+                
+        //     }
+            
+        // })
+        // xhr.open(config.method,config.url,true);
+        // xhr.send();
+        // }
+
+        // function success (responseText){
+        //     document.getElementById ('qod').innerHTML =  responseText ;
+        // }
+
+        // function error (){
+        //     alert ('could not retrieve quote of the day');
+        // }
+
+        // ajax ( {
+        //     method :'GET' ,
+        //     url : '/qod.txt',
+        //     success: success , 
+        //     error :error
+        //     } );
+            
+            $(document).ready(function() {
+                function success (responseText){
+                     document.getElementById ('qod').innerHTML =  responseText ;
+                }
+
+         function error (){
+             alert ('could not retrieve quote of the day');
+                 } 
+
+                 
+                 $.ajax({
+                    method :'GET' ,
+                   url : '/qod.txt',
+                   success: success , 
+                    error :error
+                 });
+            });
+    </script>
+</body>
+</html>

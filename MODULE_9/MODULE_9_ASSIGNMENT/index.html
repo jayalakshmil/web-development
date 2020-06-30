@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>legends</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap-theme.min.css">
+    <style>
+        body{
+            margin: 0;
+        padding: 0;
+        background-image: url('images/background.jpg');
+        background-image: no-repeat;
+    }
+        
+        img{
+            width: 300px;
+            height: 300px;
+            padding-left: 20px;
+        
+        }
+        .row{
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center"><b> The Legends</b></h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a  data-toggle="modal" href='#modal-id' data-src="description/gandhiji.html">
+                <img src="images/gandhiji.jpeg" alt="Gandhiji">
+            </a>
+            </div>
+            <div class="col-md-4">
+                <a  data-toggle="modal" href='#modal-id' data-src='description/abraham.html'>
+                    <img src="images/abraham_lincoln.jpg" alt="Abraham">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a  data-toggle="modal" href='#modal-id' data-src='description/fidel.html'>
+                <img src="images/Fidel_Castro.jpg" alt="Fidel_Castro">
+                </a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a  data-toggle="modal" href='#modal-id' data-src='description/mother_teresa.html'>
+                <img src="images/mother_teresa.jpeg" alt="mother_teresa">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a  data-toggle="modal" href='#modal-id' data-src='description/muhammad.html'>
+                <img src="images/muhammad_ali.jpeg" alt="muhammad">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a  data-toggle="modal" href='#modal-id' data-src='description/nelson.html'>
+                <img src="images/nelson_mandela.jpg" alt="nelson_mandela">
+                </a>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="modal fade" id="modal-id">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title"> <b> The Legend</b>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Got it</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        $('a').on('click',function(){
+            $.ajax({
+                method : 'GET',
+                url : $(this).attr('data-src'),
+                success : function(response){
+                    $ ('#modal-id .modal-body').html(response);
+                },
+                error: function(){
+                    alert('sorry couldnot fetch the details');
+                }
+                
+            })
+        });
+    </script>
+
+</body>
+</html>
