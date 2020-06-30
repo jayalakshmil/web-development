@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery.countdown.package-2.1.0/js/jquery.plugin.min.js"></script>
+    <script src="jquery.countdown.package-2.1.0/js/jquery.countdown.min.js"></script>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Teko:300,700);
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url('images/newyear.jpg');
+        background-image: no-repeat;
+    }
+    #show-time{
+        font-size: 20px;
+        font-family: 'Teko',sans-serif;
+        width: 500px;
+        margin: 200px auto;
+        border: 1px solid rgb(58, 45, 48);
+        background-color: rgb(209, 40, 231);
+    }
+    #show-time .heading{
+        background-color: rgba(0,0,0,.5);
+        padding:15px 0px 2px 0px ;
+        margin: 0px 0px 30px 0px;
+    }
+    #show-time h1{
+        font-size:4.2em ;
+        color:#ffffff ;
+        text-transform:uppercase ;
+        font-weight:300 ;
+        line-height:70px ;
+        margin:0px 0px 0px -5px ;
+        padding: 0px ;
+        text-align: center;
+    }
+    #show-time h2{
+        font-size:1.5em ;
+        color:#6fb5f8 ;
+        text-transform:uppercase ;
+        font-weight:700 ;
+        line-height:20px ;
+        margin:0px ;
+        padding: 0px ;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    #show-time .my-countdown .countdown-row{
+        display: block;
+        text-align: center;
+    }
+    #show-time .my-countdown .countdown-section{
+        display: inline-block;
+        width: 100px;
+    }
+    #show-time .my-countdown .countdown-amount{
+        display: block;
+        color: #ffffff;
+        font-size: 5.6em;
+        line-height: 55px;
+    }
+    #show-time .my-countdown .countdown-period{
+        display: block;
+        color: #6f5bf8;
+        font-size: 1.4em;
+        text-transform: uppercase;  
+        letter-spacing: 2px;  
+        }
+</style>
+
+
+</head>
+
+<body>
+    <div id="show-time">
+        <div class="heading">
+            <h2>Countdown to 2021</h2>
+            <h1>NEW YEAR</h1>
+            
+        </div>
+      
+        <div class="my-countdown"></div>
+        
+    </div>
+    <script>
+        $(document).ready(function(){
+            var newyear = new Date();
+            newyear =new Date(newyear.getFullYear() +1,1,-1,1);
+            $('.my-countdown').countdown({until:newyear});
+        });
+    </script>
+
+    
+</body>
+</html>

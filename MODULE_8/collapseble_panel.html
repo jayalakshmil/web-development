@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event-handling</title>
+</head>
+<style>
+       .panel{
+           border-width: 1px;
+            border-radius: 4px;
+            border-style: solid;
+            margin: 10px 0;
+        }
+        .panel-heading{
+            cursor: pointer;
+        }
+        .panel-success{
+            border-color: rgb(64, 165, 233);
+        }
+
+        .panel-heading .panel-body{
+            padding: 40px 50px;
+        }
+        .panel-danger{
+            border-color: rgb(216, 219, 30);
+
+        }
+        .panel-success .panel-heading{
+            background-color: orange;
+        }
+        .panel-danger .panel-heading{
+            background-color: palevioletred;
+        }
+</style>
+
+<body>
+    <div class="panel panel-success">
+       <div class="panel-heading"> 
+           Message-1
+        </div>
+        <div class="panel-body">
+            You have been subcribe to our newsletter
+        </div>
+
+    </div>
+    <div class="panel panel-danger">
+        <div class="panel-heading"> 
+            Message-2
+         </div>
+         <div class="panel-body">
+             You have been unsubcribe to our newsletter
+         </div>
+ 
+     </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+   
+   <script>
+
+       $ (document).ready(function(){
+        $('.panel-heading').click(function(){
+            // $(this).closest('.panel').find('.panel-body').toggle();
+            // $(this).closest('.panel').find('.panel-body').fadeToggle();
+            $(this).closest('.panel').find('.panel-body').slideToggle(500);
+
+        });
+       })  ;  
+    </script>
+</body>
+
+</html>

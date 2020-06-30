@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-css-val</title>
+    <style>
+        .message{
+            padding: 20px 20px 20px 20px;
+            border: 2px solid crimson;
+            border-radius: 5px;
+            background-color: lightcoral;
+        }
+        .message-success{
+            border: 8px solid rgb(96, 235, 154);
+            background-color: rgb(233, 64, 163);
+
+
+        }
+        .message-danger{
+            border: 8px solid rgb(53, 7, 13);
+            background-color: rgb(216, 219, 30);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message message-success"></div>
+    <div class="message message-danger"></div>
+    <br>
+    Name : <input type="text" id="name" name="name" value="jhony">
+    <br>
+    <br>
+    <input type="button" id="btnname" value="name appear in console.log">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+   
+   <script>
+    //    $ (document).ready(function(){
+        // $('.message').html('This is a message');
+    //    });
+
+    $ (document).ready(function(){
+        var $message= $('.message');// returns the inner html of the first matched element.
+        console.log($message);
+         $('.message').html('  This is a <i>Message</i>');// inner html of all matched elements (items in the collection)will set in one shot
+
+        $message.css({
+            'font-weight':'bold',
+            color : 'white'
+        });
+
+        $ ('#btnname').on('click',function(){
+            console.log ($('[name="name"]').val());
+            $('[name="name"]').val('');
+        });
+
+    });
+       
+    </script>
+</body>
+
+</html>

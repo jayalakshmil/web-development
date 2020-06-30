@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery introduction</title>
+</head>
+
+<body>
+    <div id="message"></div>
+    <div></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+   
+   <script>
+        $(document).ready(function () {
+            console.log($);//global function. it is named $ 
+            console.log(jQuery);//jquery alias for $
+
+
+            var money = $('#message');// accepts dom node , css selector , returns a jquery collection object
+            console.log(money instanceof Array);//money is not an array - it is an array - like object
+            console.log(money);
+
+            var allDivs = $('div');
+            console.log(allDivs);
+        });
+       
+    </script>
+</body>
+
+</html>

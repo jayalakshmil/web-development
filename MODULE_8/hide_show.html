@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event-handling</title>
+</head>
+<style>
+       .message{
+            padding: 20px 20px 20px 20px;
+            border: 2px solid crimson;
+            border-radius: 5px;
+            background-color: lightcoral;
+        }
+        .message-success{
+            border: 2px solid rgb(178, 238, 203);
+            background-color: rgb(64, 165, 233);
+
+
+        }
+        .message-danger{
+            border: 2px solid rgb(207, 46, 67);
+            background-color: rgb(216, 219, 30);
+
+        }
+        
+</style>
+
+<body>
+    <div class="message message-success">message-1</div>
+    <div class="message message-danger">message-2</div>
+
+    <button id="btn-hide"> <b> hide</b></button><br><br>
+    <button id="btn-show"> <b> show</b></button><br><br>
+    <button id="btn-toggle"> <b>Toggle</b></button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+   
+   <script>
+       $(document).ready(function(){
+            $('#btn-hide').on('click',function(){
+                $('.message-success').hide();
+            }),
+            $('#btn-show').on ('click',function(){
+                $('.message-success').show();
+            });
+            $('#btn-toggle').on('click',function(){
+                $('.message-success').toggle();
+            });
+       });
+    
+    </script>
+</body>
+
+</html>

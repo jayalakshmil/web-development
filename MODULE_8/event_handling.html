@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event-handling</title>
+</head>
+<style>
+       .message{
+            padding: 20px 20px 20px 20px;
+            border: 2px solid crimson;
+            border-radius: 5px;
+            background-color: lightcoral;
+        }
+        .yellow-bg{
+            background-color: yellow;
+        }
+        .olive-bg{
+            background-color: olive;
+        }
+</style>
+
+<body>
+    <div class="message">message-1</div>
+    <div></div>
+<br>
+    Name : <input type="text" id="name" name="name" >
+    <br>
+    <br>
+    <input type="button" id="btnname" value="click me">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+   
+   <script>
+    $(document).ready(function(){
+        // $('#message').on('click',function(){
+        //     console.log($(this).html());
+
+        // });
+        // $('.message').click(function(){
+        //     console.log('click',$ (this).html() );
+        // });
+
+        // $('.message').dblclick(function(){
+        //     console.log('dblclick',$ (this).html() );
+        // });
+
+       $('.message').on({
+            click : function($event){
+                console.log('click',$ (this).html() );
+                console.log($event);
+            },
+            dblclick : function(){
+            console.log('dblclick',$ (this).html() );
+            },
+
+            mouseenter : function(){
+                console.log('mouseenter:',$(this).html());
+            },
+
+            mouseover : function(){
+                console.log('mouseover:',$(this).html());
+                
+            }
+                });
+
+       $ ('input').on({
+            focus : function(){
+                $(this).addClass('yellow-bg');
+                $(this).removeClass('olive-bg');
+
+            },
+            blur : function(){
+                $(this).removeClass('yellow-bg');
+                $(this).addClass('olive-bg');
+            }
+             });
+      });
+// chin class
+    // $ ('input').on({
+    //         focus : function(){
+    //             $(this).addClass('yellow-bg').removeClass('olive-bg');
+
+    //         },
+    //         blur : function(){
+    //             $(this).removeClass('yellow-bg').addClass('olive-bg');
+    //         }
+    //    });
+        
+    // });
+    
+    </script>
+</body>
+
+</html>
