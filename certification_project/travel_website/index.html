@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.1/jarallax.css">
+    <style>
+        body {
+            font-family: 'Lobster';
+            font-size: 20px;
+            margin: 0;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .store-table {
+            display: table;
+            width: 100%;
+            height: 400px;
+            color: #fff;
+        }
+
+        .store-table-cell {
+            padding-top: 50px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #fa-5x {
+            padding-top: 100px;
+            color: rgb(116, 34, 19);
+            text-align: center;
+        }
+
+        #tr_disc {
+            padding-top: 50px;
+        }
+
+        #tr_prgh {
+            padding-top: 40px;
+            padding-bottom: 90px;
+        }
+
+        .button {
+            background-color: white;
+            border-radius: 50px;
+            color: black;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 10px 8px;
+        }
+
+        #prgh {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        #prgh>h1,
+        h2 {
+            text-align: center;
+        }
+
+        #travel-1 {
+            height: 400px;
+            width: 300px;
+            padding-left: 20px;
+            padding-top: 100px;
+        }
+
+        #pg-1 {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .col-md-4>h2 {
+            padding-top: 20px;
+        }
+
+        #map {
+            margin-top: 50px;
+            height: 400px;
+            width: 100%;
+        }
+
+        #footer {
+            background-color: rgb(240, 237, 233);
+            color: black;
+            margin-top: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top" role="navigation">
+        <div class="container">
+            <div class="nav-brand">
+
+            </div>
+            <button class="navbar-toggler nav navbar-nav navbar-right" type="button" data-toggle="collapse"
+                data-target="#primary-menu" aria-controls="primary-menu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="primary-menu">
+                <ul class="navbar  justify-content-center flex-column" style="list-style: none;">
+                    <li><a href="https://www.edureka.co/corporate-training">Home</a></li>
+                    <li><a href="courses.html">Watch Video</a></li>
+                    <li><a href="https://www.edureka.co/blog/">Demo Pages</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#mylogin">More Templates</a></li>
+                    <li><a href="#" id="tour-start-btn">More Templates</a></li>
+                    <li><button class="navbar-toggle" type="button">BUY NOW</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jarallax">
+        <img class="jarallax-img" src="images/image-1.jpeg" alt="">
+        <div class="store-table">
+            <div class="store-table-cell">
+                <h1>Visit Iceland! </h1> <br>
+                <h6>have an unforgettable journey</h6>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="fa-5x">
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fa fa-heart-o fa-5x" aria-hidden="true"></i>
+                <br>
+                <h3 id="tr_disc">20% Discount now!</h3>
+                <p id="tr_prgh">Because at least once in your life you need to <br> look at the place where Bjork was
+                    born and <br> grew up.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-rocket fa-5x" aria-hidden="true"></i> <br>
+                <h3 id="tr_disc">Travel in comfort</h3>
+                <p id="tr_prgh">It is better to take care of airplane tickets in <br> advance. We take care of you.</p>
+
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-globe fa-5x" aria-hidden="true"></i> <br>
+                <h3 id="tr_disc">Travel with us</h3>
+                <p id="tr_prgh">The best way to travel in Iceland is a rented <br> car. We offer this service as well.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="jarallax">
+        <img class="jarallax-img" src="images/mountain-lake-wallpaper.jpg" alt="">
+        <div class="store-table">
+            <div class="store-table-cell">
+                <h1>Contact your travel agent </h1>
+                <input class="button button4" type="button" value="+ 234 567 1112">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="prgh">
+            <div class="col-md-12">
+                <h1>Explore the world!</h1> <br>
+                <h2>We'll take care of everything else.</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="images/alexandre-godreau-188906.jpg" style="height: 500px;width: 400;padding-left:200px;"
+                    alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img id="travel-1" src="images/isabella-juskova-100383.jpg" alt="">
+                <h2>Experienced Guides</h2>
+                <p id="pg-1">In Iceland at every step there are hot <br> pools, not to swim in which it is <br> sinful.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img id="travel-1" src="images/jeremy-bishop-262140.jpg" alt="">
+                <h2>Choose your Tour</h2>
+                <p id="pg-1">Since Iceland is a developed and <br> progressive country, you can do <br> without cash.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img id="travel-1" src="images/john-salvino-317388.jpg" alt="">
+                <h2>Chargers Available</h2>
+                <p id="pg-1">On the western fjords there is the <br> most difficult and picturesque road.</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="jarallax">
+        <img class="jarallax-img" src="images/mountain-lake-wallpaper.jpg" alt="">
+        <div class="store-table">
+            <div class="store-table-cell">
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <h2>Insurance</h2>
+                        <p>To issue a traveler's policy today is <br> not more difficult than booking a <br> hotel room
+                            or plane tickets.</p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <h2>Help with Visa</h2>
+                        <p>The nature of the country is <br> beautiful, it is volcanoes, waterfalls <br> and fjords.</p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <h2>Tickets</h2>
+                        <p>The unique nature of Iceland is the <br> main attraction of the Ice Country.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="piechart" class="row justify-content-center">
+
+    </div>
+
+    <div id="map">
+
+    </div>
+    <div class="row justify-content-center " id="footer">
+        <footer style="margin-top: 30px">
+            <div class="text-center">
+                Copyright &copy;2020 Brain4ce Education solution Pvt. Ltd. All rights reserved.
+                <a data-toggle="modal" href='#modal-id'>Terms and Conditions</a>
+            </div>
+            <div class="modal fade" id="modal-id">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Using ebayinc.com</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                        </div>
+                        <div class="modal-body">
+                            <P>You accept ebayinc.com "as-is" and choose to use it at your own risk. Despite the
+                                prohibitions below, ebayinc.com may contain inaccurate, inappropriate or possibly
+                                offensive
+                                material, and we assume no responsibility or liability for such material.</P>
+
+                            <h3>Abusing ebayinc.com</h3>
+
+                            <p>We may limit or terminate our service, remove hosted content and take technical and
+                                legal
+                                steps to keep users off ebayinc.com if we think they are creating problems or acting
+                                inconsistently with the letter or spirit of our policies. Please report problems,
+                                offensive
+                                content and policy violations by emailing us at ebayinc@ebay.com.
+
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.1/jarallax-element.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.1/jarallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.1/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>
+
+    <script>
+        objectFitImages();
+
+        /* init Jarallax */
+        jarallax(document.querySelectorAll('.jarallax'));
+
+        jarallax(document.querySelectorAll('.jarallax-keep-img'), {
+            keepImg: true,
+        });
+        function initMap() {
+            var myLatLng = { lat: 15.824022, lng: 78.479333 };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Edureka'
+            });
+        }
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Draw the chart and set the chart values
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Quantity in percentage'],
+                ['US', 30],
+                ['UK', 40],
+                ['India', 20],
+                ['China', 10]
+
+            ]);
+
+            // Optional; add a title and set the width and height of the chart
+            var options = { 'title': 'Popular Tours', is3D: true, 'width': 850, 'height': 700 };
+
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCzYpYsHorJKXaCZCGeGWNAPnhuXETRsU&callback=initMap">
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.1/jarallax.css">
+
+    <style>
+        body {
+            font-family: 'Lobster';
+            font-size: 20px;
+            margin: 0;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .store-table {
+            display: table;
+            width: 100%;
+            height: 600px;
+            color: #fff;
+        }
+
+        .store-table-cell {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #prgh {
+            color: rgb(92, 90, 86);
+            padding-left: 20px;
+        }
+
+        #button {
+            margin-left: 80PX;
+            background-color: rgb(49, 38, 38);
+            color: blanchedalmond;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        #map {
+            margin-top: 50px;
+            height: 400px;
+            width: 100%;
+        }
+
+        #rooms {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        #image {
+            height: 350px;
+            width: 300px;
+        }
+
+        #image:hover {
+            transform: scale3d(1.1, 1.1, 1.1);
+
+        }
+
+        #img {
+            height: 500px;
+            width: 500px;
+            padding-left: 40px;
+        }
+
+        #img:hover {
+            transform: scale3d(1.1, 1.1, 1.1);
+
+        }
+
+        #image {
+            padding-left: 40px;
+            padding-bottom: 50px;
+
+        }
+
+        .first-card .card-wrapper {
+            height: 100%;
+        }
+
+        .btn-top {
+            position: absolute;
+            top: 70%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #btn {
+
+            background-color: #555;
+            color: white;
+            margin-left: 200px;
+        }
+
+        #btn-room {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            color: black;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        #btn-room1 {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            color: rgb(223, 172, 172);
+            font-size: 16px;
+            text-align: left;
+        }
+        #footer{
+    background-color: rgb(240, 237, 233);
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top" role="navigation">
+        <div class="container">
+            <div class="nav-brand">
+
+            </div>
+            <button class="navbar-toggler nav navbar-nav navbar-right" type="button" data-toggle="collapse"
+                data-target="#primary-menu" aria-controls="primary-menu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="primary-menu">
+                <ul class="navbar  justify-content-center flex-column" style="list-style: none;">
+                    <li><a href="https://www.edureka.co/corporate-training">Home</a></li>
+                    <li><a href="courses.html">Watch Video</a></li>
+                    <li><a href="https://www.edureka.co/blog/">Demo Pages</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#mylogin">More Templates</a></li>
+                    <li><a href="#" id="tour-start-btn">More Templates</a></li>
+                    <li><button class="navbar-toggle" type="button">BUY NOW</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jarallax">
+        <img class="jarallax-img" src="images/Safari-Court-Hotel-Pool.jpg" alt="">
+        <div class="store-table">
+            <div class="store-table-cell">
+                <h1 style="font-size:5em;">WELCOME</h1> <br>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img style="height:500px;width: 990px; " src="images/background6.jpg" alt="">
+            </div>
+            <div class="col-sm-6" style="background-color: black;">
+                <h1 style="color: whitesmoke;font-size:4em;padding-left: 20px;">Discover our <br>
+                    History</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p id="prgh">This HTML5 Hotel Template lies in near Mountfell <br> Airport and uses a free of
+                            charge complete <br> Southern morning meal buffet, cost-free flight <br> terminal shuttle
+                            services and also guest rooms <br> with free WiFi.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p id="prgh">Visitors can take advantage of the on-site <br> company centre, health and fitness
+                            area with <br> cardio and also weight tools, and coin washing <br> facilities with detergent
+                            readily available in <br> HTML5 Hotel Template for purchase. Free coffee <br> is offered in
+                            the lobby.
+
+                        </p>
+                    </div>
+                </div>
+                <input id="button" type="button" value="ABOUT US">
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center" id="rooms">
+            <h1 style="font-size: 3em;">Our Best Rooms</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-6 ">
+                <img id="img" src="images/04.jpg" alt=""> <br>
+                <h3 style="padding-top: 40px;text-align: center;">Small Room</h3>
+                <p style="text-align: center;">The Hotel Template additionally supplies <br> visitors with laundry and
+                    <br> ironing centers.</p>
+                <button type="button" id="btn" class="btn btn-primary btn-sm">BOOK NOW 20$</button>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-lg-6 col-md-4 col-sm-3">
+                        <img id="image" src="images/01.jpg" alt="">
+                        <h6 id="btn-room">FAMILY ROOM</h6>
+                        <button type="button" class="btn btn-primary btn-sm btn-top">BOOK NOW 20$</button>
+
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-sm-3">
+                        <img id="image" src="images/02.jpg" alt="" />
+                        <h6 id="btn-room">DOUBLE ROOM</h6>
+                        <button type="button" class="btn btn-primary btn-sm btn-top">BOOK NOW 30$</button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" col-lg-6 col-md-4 col-sm-3">
+                        <img id="image" src="images/03.jpg" alt="">
+                        <h6 id="btn-room1">LUXURY ROOM</h6>
+                        <button type="button" class="btn btn-primary btn-sm btn-top">BOOK NOW 110$</button>
+
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-sm-3">
+                        <img id="image" src="images/05.jpg" alt="">
+                        <h6 id="btn-room1">APARTMENT</h6>
+                        <button type="button" class="btn btn-primary btn-sm btn-top">BOOK NOW 90$</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+     <div class="container "> 
+        <div id="piechart" class="row justify-content-center">
+
+        </div>
+
+    </div>
+
+
+
+    <div id="map"></div>
+    <div class="row justify-content-center " id="footer">
+        <footer style="margin-top: 30px">
+            <div class="text-center">
+                Copyright &copy;2020 Brain4ce Education solution Pvt. Ltd. All rights reserved.
+                <a data-toggle="modal" href='#modal-id'>Terms and Conditions</a>
+            </div>
+            <div class="modal fade" id="modal-id">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Using ebayinc.com</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                        </div>
+                        <div class="modal-body">
+                            <P>You accept ebayinc.com "as-is" and choose to use it at your own risk. Despite the
+                                prohibitions below, ebayinc.com may contain inaccurate, inappropriate or possibly
+                                offensive
+                                material, and we assume no responsibility or liability for such material.</P>
+
+                            <h3>Abusing ebayinc.com</h3>
+
+                            <p>We may limit or terminate our service, remove hosted content and take technical and
+                                legal
+                                steps to keep users off ebayinc.com if we think they are creating problems or acting
+                                inconsistently with the letter or spirit of our policies. Please report problems,
+                                offensive
+                                content and policy violations by emailing us at ebayinc@ebay.com.
+
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.1/jarallax-element.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.1/jarallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.12.1/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>
+
+    <script>
+        objectFitImages();
+        jarallax(document.querySelectorAll('.jarallax'));
+
+        jarallax(document.querySelectorAll('.jarallax-keep-img'), {
+            keepImg: true,
+        });
+
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Draw the chart and set the chart values
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Quantity in percentage'],
+                ['Family Room', 30],
+                ['Double Room', 40],
+                ['Luxury Room', 20],
+                ['Appartment', 10]
+
+            ]);
+
+            // Optional; add a title and set the width and height of the chart
+            var options = { 'title': 'Available Rooms', pieHole:0.4, 'width': 850, 'height': 700 };
+
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+        function initMap() {
+            var myLatLng = { lat: 15.824022, lng: 78.479333 };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Edureka'
+            });
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCzYpYsHorJKXaCZCGeGWNAPnhuXETRsU&callback=initMap">
+        </script>
+</body>
+
+</html>
